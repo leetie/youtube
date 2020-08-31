@@ -19,6 +19,9 @@ footer, header, hgroup, menu, nav, section {
 a:link {
   text-decoration: none;
 }
+a:visited {
+  color: blue;
+}
 body {
 	line-height: 1;
 }
@@ -199,8 +202,53 @@ i:hover {
   height: 50px;
 }
 .suggested {
-  background-color: purple;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
   width: 30%;
   height: auto;
 }
+.up-next {
+  margin: 20px 10px 10px 20px;
+}
+.up-next p {
+  display: inline;
+  margin: auto auto auto 20px;
+  border-bottom: 2px solid grey;
+}
+.video-thumbnail {
+  position: relative;
+  width: 150px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
 
+.length {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 3px 6px 3px 6px
+}
+.suggested-video {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+}
+.suggested-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+.suggested-video-info {
+  margin-top: 0;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: rgb(155, 140, 140)
+}
+.video-info {
+  margin-top: 0;
+  width: 200px;
+}
