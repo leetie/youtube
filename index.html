@@ -4,9 +4,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youtube</title>
+  <link rel="stylesheet" href="vendor/all.css">
   <link rel="stylesheet" href="style.css">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
 </head>
 <body>
-  
+  <div class="container">
+    <nav class="topnav">
+      <div class="lnav">
+        <span style="font-size: 1.2em; color: white; margin-right: 10px;">
+          <i class="fa fa-bars"></i>
+        </span>
+        <span style="font-size: 2.5em; color: tomato;">
+          <i class="fa fa-youtube-play"></i>
+        </span>
+        <!-- <span style="font-size: 3em; color: Tomato">
+          <i class="fas fa-camera"></i>
+        </span> -->
+        <p class="nav-logo">YouTube</p>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search">
+        <span style="color: white">
+          <i class="fa fa-search"></i>
+        </span>
+      </div>
+      <div class="icons">
+        <i class="fa fa-video-camera"></i>
+        <i class="fa fa-th"></i>
+        <i class="fa fa-ellipsis-v"></i>
+      </div>
+    </nav>
+  </div>
+  <div>
+    <!-- player -->
+    <div class="iframe-container">
+      <iframe width="800" height="800"
+      src="https://youtube.com/embed/B3QTAgHlwEg"></iframe>
+    </div>
+  </div>
+
+
+
+
+  <div class="container">
+
+    <div class="container social">
+        <!-- video info -->
+      <div class="info">
+        <a href="https://www.youtube.com/feed/trending">#1 ON TRENDING</a>
+        <strong><p>The Warrior Kingdoms of the Weaver Ant</p></strong>
+        <p class="views">1,431,946 views * Aug 30, 2020</p>
+      </div>
+      <!-- comments -->
+      <div class="comments">
+        <div class="comment">
+          <p>this is a comment</p>
+        </div>
+
+        <div class="comment">
+          <p>This is another comment</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="suggested">
+      <ul>
+        <li>hey</li>
+      </ul>
+    </div>
+  </div>  
+  <script src="https://kit.fontawesome.com/d4aeccea42.js" crossorigin="anonymous"></script>
 </body>
 </html>
