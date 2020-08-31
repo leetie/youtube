@@ -1,0 +1,1 @@
+This project is a simple page modeled after Youtube, which is part of [The Odin Project's](https://www.theodinproject.com/courses/html-and-css/lessons/embedding-images-and-video?ref=lnav) curriculum on HTML and CSS. 
