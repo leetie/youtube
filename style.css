@@ -3,19 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -27,6 +15,9 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+}
+a:link {
+  text-decoration: none;
 }
 body {
 	line-height: 1;
@@ -78,17 +69,24 @@ body {
 .search {
   flex-basis: auto;
   margin: auto;
+  padding: 0;
 }
 .topnav input {
   background-color: rgb(22, 20, 20);
   color: white;
   width: 500px;
-  height: 20px;
+  height: 25px;
   border: none;
 }
 .fa-search {
   height: 20px;
+  width: 45px;
+  color: rgb(126, 115, 115);
 }
+i:hover {
+  cursor: pointer;
+}
+
 .icons {margin-right: 15px;display: inline;}
 .icons i {
   display: inline;
@@ -103,9 +101,9 @@ body {
   height: 500px;
   padding: 0;
   margin: 0;
+  margin-top: 70px;
 }
 .iframe-container iframe {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -118,20 +116,87 @@ body {
 .info {
   margin-left: 30px;
   margin-top: 15px;
-  border-bottom: 2px solid grey;
+  border-bottom: 1px solid rgb(230, 226, 226);
   margin-bottom: 20px;
   height: 80px;
-  background-color: salmon;
-  width: 80%;
+  width: 95%;
+  padding-bottom: 20px;
+}
+.info h2 {
+  font-size: 20px;
 }
 .views{
   color: rgb(155, 140, 140);
 }
+.info .fa {
+  margin: 0px 10px 0px 10px;
+  float: right;
+  font-size: .9em;
+  color: rgb(155, 140, 140);
+}
 .comments {
+  display:flex;
+  flex-direction: column;
   margin-left: 30px;
-  background-color: blue;
-  width: 100%;
+  width: 95%;
   height: 900px;
+}
+.comment {
+  margin: 20px 10px 15px 10px;
+}
+.comment-author {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+}
+.comment-author .fa-ellipsis-v {
+  display: none;
+  order: 2;
+  margin-left: auto;
+}
+.comment:hover .fa-ellipsis-v {
+  display: flex;
+  color: rgb(155, 140, 140);
+  margin-left: 400px;
+}
+.author-name {
+  flex-direction: column;
+  font-weight: bolder;
+  color: black;
+}
+.comment-time {
+  margin-left: 5px;
+  color: rgb(155, 140, 140);
+}
+.comment-body {
+  margin-left: 50px;
+}
+.comment-body p {
+  font-weight: lighter;
+  margin-top: 0;
+}
+.interactions {margin-left: 50px}
+.interactions .fa{
+  color: rgb(155, 140, 140);
+  font-size: .9em;
+  margin-left: 10px;
+}
+.view-replies {
+  margin-left: 50px;
+  margin-top: 15px;
+}
+.reply-button {
+  margin-left: 10px;
+  border: none;
+  background-color: white;
+  color: rgb(155, 140, 140);
+}
+.reply:hover {
+  cursor: pointer;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
 }
 .suggested {
   background-color: purple;
