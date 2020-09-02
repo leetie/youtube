@@ -137,12 +137,63 @@ i:hover {
   font-size: .9em;
   color: rgb(155, 140, 140);
 }
+.video-author {
+  display: flex;
+  margin-left: 30px;
+  margin-bottom: 70px;
+}
+.video-author img {
+  border-radius: 50%;
+}
+.video-author-info {
+  margin-left: 10px;
+  border-bottom: 1px solid rgb(226, 221, 221);
+  padding-bottom: 15px;
+  margin-right: 30px;
+}
+.subscribe {
+  float: right;
+  padding: 5px 0 5px 0;
+  margin-right: 10px;
+  background-color: red;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+.video-author-info p {
+  margin-bottom: 0;
+}
+.subscribers {
+  margin-top: 5px;
+  color: rgb(155, 140, 140);
+  font-size: 14px;
+}
+.video-description {
+  font-size: 14px;
+}
 .comments {
   display:flex;
   flex-direction: column;
   margin-left: 30px;
   width: 95%;
   height: 900px;
+}
+.comment-count {
+  margin-left: 15px;
+  margin-top: 30px;
+  color: rgb(155, 140, 140);
+}
+.comment-count p {
+  display: inline;
+}
+.comment-sort {
+  margin-left: 10px;
+}
+#commenting-as {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(226, 221, 221);
+  width: 100%;
+  margin-right: 15px;
 }
 .comment {
   margin: 20px 10px 15px 10px;
