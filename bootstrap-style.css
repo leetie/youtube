@@ -1,5 +1,57 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
 .navbar {
   background-color: #252525;
+  opacity: 95%;
 }
 .fa-bars {
   font-size: 1.3em;
@@ -15,4 +67,117 @@
 .input-group-append {
   background-color: #363636;
   color: #363636;
+}
+.embed-responsive {
+  margin-top: 54px;
+}
+.metrics {
+  border-bottom: 1px solid rgb(230, 222, 222);
+}
+.interactions i {
+  color: #909090;
+  font-size: .95em;
+  cursor: pointer;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.fa-check-circle {
+  color: #636060;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.title {
+  display: inline;
+}
+.subscribe {
+  height: 40px;
+}
+.show-more {
+  margin-top: 20px;
+  border: none;
+  background-color: white;
+  color: grey;
+  font-weight: 600;
+}
+.comment-count {
+  font-weight: 500;
+  display: inline;
+}
+.commenting-as {
+  margin-top: 10px;
+}
+
+.comment {
+  margin-top: 40px;
+}
+@media only screen and (max-width: 769px) {
+  .comments {
+    border-bottom: 8px solid black;
+    border-radius: 2px;
+    padding-bottom: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+.suggested {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.up-next {
+  margin: 20px 10px 10px 20px;
+}
+.up-next p {
+  display: inline;
+  margin: auto auto auto 20px;
+  border-bottom: 2px solid grey;
+}
+.video-thumbnail {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.length {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 3px 6px 3px 6px
+}
+.up-next {
+  margin: 20px 10px 10px 20px;
+}
+.up-next p {
+  display: inline;
+  margin: auto auto auto 20px;
+}
+.suggested-video {
+  margin-top: 10px;
+}
+.suggested-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+.suggested-video-info {
+  font-size: 14px;
+  margin: 0 0 5px 5px;
+  color: rgb(155, 140, 140)
+}
+.video-info {
+  margin-top: 0;
+  width: 200px;
 }
