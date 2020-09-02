@@ -106,6 +106,9 @@ table {
   font-weight: 500;
   display: inline;
 }
+.comment-sort {
+  cursor: pointer;
+}
 .commenting-as {
   margin-top: 10px;
 }
@@ -128,7 +131,7 @@ table {
 
 
 
-
+/* stuff from style.css file  */
 .suggested {
   align-items: flex-start;
   display: flex;
@@ -166,6 +169,7 @@ table {
 }
 .suggested-video {
   margin-top: 10px;
+  cursor: pointer;
 }
 .suggested-title {
   margin-top: 0;
