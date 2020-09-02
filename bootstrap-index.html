@@ -5,258 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youtube</title>
   <link rel="stylesheet" href="vendor/all.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap-style.css">
   <link rel="stylesheet" href="vendor/toggle.css">
+
   <!-- google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+   <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-  <div class="container">
-    <nav class="topnav">
-      <div class="lnav">
-        <span style="font-size: 1.2em; color: white; margin-right: 10px;">
-          <i class="fa fa-bars"></i>
-        </span>
-        <span style="font-size: 2.5em; color: tomato;">
-          <i class="fa fa-youtube-play"></i>
-        </span>
-        <!-- <span style="font-size: 3em; color: Tomato">
-          <i class="fas fa-camera"></i>
-        </span> -->
-        <p class="nav-logo">YouTube</p>
-      </div>
-      <div class="search">
-        <input type="text" placeholder="Search">
-        <span>
+
+  <div class="align-items-center navbar navbar-expand">
+    <ul class="navbar-nav">
+      <li class="nav-item d-flex align-items-center">
+        <i class="fa fa-bars text-light mr-3"></i>
+      </li>
+      <li class="nav-item d-flex align-items-center">
+        <i class="fa fa-youtube-play text-danger"></i>
+      </li>
+      <li class="nav-item d-flex align-items-center ml-1">
+        <span class="text-light">YouTube</span>
+      </li>
+    </ul>
+
+    <div class="input-group mx-auto nav-item w-50">
+      <input type="text" class="form-control" placeholder="Search" name="query">
+      <div class="input-group-append">
+        <span class="input-group-text">
           <i class="fa fa-search"></i>
         </span>
       </div>
-      <div class="icons">
-        <i class="fa fa-video-camera"></i>
-        <i class="fa fa-th"></i>
-        <i class="fa fa-bell"></i>
-      </div>
-    </nav>
+    </div>
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <i class="fa fa-video-camera ml-2 text-light"></i>
+      </li>
+      <li class="nav-item">
+        <i class="fa fa-th text-light ml-2"></i>
+      </li>
+      <li class="nav-item">
+        <i class="fa fa-bell text-light ml-2"></i>
+      </li>
+    </ul>
   </div>
-  <div>
-    <!-- player -->
-    <div class="iframe-container">
-      <iframe width="800" height="800"
-      src="https://youtube.com/embed/B3QTAgHlwEg"></iframe>
-    </div>
-  </div>
 
-
-
-
-  <div class="container">
-    <div class="container social">
-        <!-- video info -->
-      <div class="info">
-        <a href="https://www.youtube.com/feed/trending">#69 ON TRENDING</a>
-        <h2>The Warrior Kingdoms of the Weaver Ant</h2>
-        <p class="views">1,431,946 views <span style='font-size:10px;'>&#9899;</span> Aug 30, 2020
-          <i class="fa fa-ellipsis-h"></i>
-          <i class="fa fa-plus-square">  Save</i>
-          <i class="fa fa-share">  Share</i>
-          <i class="fa fa-thumbs-down">  857</i>
-          <i class="fa fa-thumbs-up">  159k</i>
-        </p>
-      </div>
-      <div class="container">
-        <div class="video-author">
-          <img src="images/creator.jpg" alt="" class="avatar">
-        </div>
-        <div class="video-author-info">
-          <p>Kurzgesagt - In a Nutshell</p><button class="subscribe">SUBSCRIBE</button>
-          <p class="subscribers">12.8M subscribers</p>
-          <p class="video-description">Get Curiosity Stream for just $14.99 for the entire YEAR or only $2.99 per month: https://curiositystream.com/kurzgesagt</p>
-        </div>
-      </div>
-      <!-- comments -->
-      <div class="comments">
-        <div class="comment-count">
-          <p>16,390 Comments</p>
-          <i class="fa fa-align-left comment-sort">   Sort By</i>
-        </div>
-        <div class="comment">
-          <div class="comment-author">
-            <img src="images/17.png" alt="" class="avatar">
-            <p id="commenting-as">Commenting publicly as <strong>joe mama</strong></p>
-          </div>
-        </div>
-        <div class="comment">
-          <div class="comment-author">
-            <img src="images/2000px-Tux-simple.svg.png" alt="avatar" class="avatar">
-            <div class="author-name">leetie</div>
-            <div class="comment-time">42 hours ago</div>
-            <div class="more-options">
-              <i class="fa fa-ellipsis-v"></i>
-            </div>
-          </div>
-          <div class="comment-body">
-            <p>first! please don't make screen width smaller D:</p>
-          </div>
-          <div class="interactions">
-            <i class="fa fa-thumbs-up">1.2K</i>
-            <i class="fa fa-thumbs-down"></i>
-            <button class="reply-button">Reply</button>
-          </div>
-          <div class="view-replies">
-            <a href="#"><i class="fa fa-caret-down"></i>  View 5 replies</a>
-          </div>
-        </div>
-
-        <div class="comment">
-          <div class="comment-author">
-            <img src="images/2.png" alt="avatar" class="avatar">
-            <div class="author-name">odin_luvr_10</div>
-            <div class="comment-time">2 hours ago</div>
-            <div class="more-options">
-              <i class="fa fa-ellipsis-v"></i>
-            </div>
-          </div>
-          <div class="comment-body">
-            <p>wow coolest video ever m8</p>
-          </div>
-          <div class="interactions">
-            <i class="fa fa-thumbs-up">1.2K</i>
-            <i class="fa fa-thumbs-down"></i>
-            <button class="reply-button">Reply</button>
-          </div>
-          <div class="view-replies">
-            <a href="#"><i class="fa fa-caret-down"></i>  View 1337 replies</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="suggested">
-      <div class="up-next">
-        Up Next
-        <p>Autoplay</p>
-        <label class="switch">
-          <input type="checkbox">
-          <span class="slider round"></span>
-        </label>
-      </div>
-
-      <div class="suggested-video">
-        <div class="video-thumbnail">
-          <img src="images/thumb-1.jpg" alt="" class="video-thumbnail">
-          <div class="length">8:57</div>
-        </div>
-        <div class="video-info">
-          <p class="suggested-title">World War of the Ants - The Army Ant</p>
-          <p class="suggested-video-info">
-            Kurzgesagt – In a Nutshell
-            </p>
-          <p class="suggested-video-info">
-            10M views <span style='font-size:10px;'>&#9899;</span> 1 year ago
-          </p>
-        </div>
-      </div>
-
-
-      <div class="suggested-video">
-        <div class="video-thumbnail">
-          <img src="images/thumb-2.jpg" alt="" class="video-thumbnail">
-          <div class="length">9:15</div>
-        </div>
-        <div class="video-info">
-          <p class="suggested-title">The Black Hole Bomb and Black Hole Civilizations</p>
-          <p class="suggested-video-info">
-            Kurzgesagt – In a Nutshell
-            </p>
-          <p class="suggested-video-info">
-            16M views <span style='font-size:10px;'>&#9899;</span> 2 years ago
-          </p>
-        </div>
-      </div>
-
-
-      <div class="suggested-video">
-        <div class="video-thumbnail">
-          <img src="images/thumb-3.jpg" alt="" class="video-thumbnail">
-          <div class="length">8:00</div>
-        </div>
-        <div class="video-info">
-          <p class="suggested-title">What If We Detonated All Nuclear Bombs at Once?</p>
-          <p class="suggested-video-info">
-            Kurzgesagt – In a Nutshell
-            </p>
-          <p class="suggested-video-info">
-            15M views <span style='font-size:10px;'>&#9899;</span> 1 year ago
-          </p>
-        </div>
-      </div>
-
-      <div class="suggested-video">
-        <div class="video-thumbnail">
-          <img src="images/thumb-4.jpg" alt="" class="video-thumbnail">
-          <div class="length">9:49</div>
-        </div>
-        <div class="video-info">
-          <p class="suggested-title">This is what happens when you reply to spam email | James Veitch</p>
-          <p class="suggested-video-info">
-            TED
-            </p>
-          <p class="suggested-video-info">
-            55M views <span style='font-size:10px;'>&#9899;</span> 4 years ago
-          </p>
-        </div>
-      </div>
-
-      <div class="suggested-video">
-        <div class="video-thumbnail">
-          <img src="images/thumb-5.jpg" alt="" class="video-thumbnail">
-          <div class="length">6:16</div>
-        </div>
-        <div class="video-info">
-          <p class="suggested-title">Fusion Power Explained - Future or Failure</p>
-          <p class="suggested-video-info">
-            Kurzgesagt - In a Nutshell
-            </p>
-          <p class="suggested-video-info">
-            8.5M views <span style='font-size:10px;'>&#9899;</span> 3 years ago
-          </p>
-        </div>
-      </div>
-
-      <div class="suggested-video">
-        <div class="video-thumbnail">
-          <img src="images/thumb-6.jpg" alt="" class="video-thumbnail">
-          <div class="length">8:25</div>
-        </div>
-        <div class="video-info">
-          <p class="suggested-title">Aliens under the Ice - Life on Rogue Planets</p>
-          <p class="suggested-video-info">
-            Kurzgesagt - In a Nutshell
-            </p>
-          <p class="suggested-video-info">
-            8M views <span style='font-size:10px;'>&#9899;</span> 1 year ago
-          </p>
-        </div>
-      </div>
-
-      <div class="suggested-video">
-        <div class="video-thumbnail">
-          <img src="images/thumb-7.jpg" alt="" class="video-thumbnail">
-          <div class="length">3:32</div>
-        </div>
-        <div class="video-info">
-          <p class="suggested-title">Rick Astley - Never Gonna Give You Up (Video)</p>
-          <p class="suggested-video-info">
-            Official Rick Astley
-          </p>
-          <p class="suggested-video-info">
-            751M views <span style='font-size:10px;'>&#9899;</span> 11 years ago
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>  
+  <!-- fontawesome icons -->
   <script src="https://kit.fontawesome.com/d4aeccea42.js" crossorigin="anonymous"></script>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
 </body>
 </html>

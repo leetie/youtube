@@ -1,0 +1,18 @@
+.navbar {
+  background-color: #252525;
+}
+.fa-bars {
+  font-size: 1.3em;
+}
+.fa-youtube-play {
+  font-size: 1.8em;
+}
+.navbar input {
+  background-color: #121212;
+  border-color: #363636;
+  border-width: 2px;
+}
+.input-group-append {
+  background-color: #363636;
+  color: #363636;
+}
